@@ -7,15 +7,15 @@ services:
     working_dir: /app
     ports:
       - "3000:3000"
-    develop:
-      watch:
-        - path: client
-          action: rebuild
+    # develop:
+    #   watch:
+    #     - path: client
+    #       action: rebuild
 
-        # - path: client/package.json
-        #   action: rebuild
-        # - action: sync
-        #   path: ./client
-        #   target: /app
-        #   ignore:
-        #     - node_modules/
+    # - path: client/package.json
+    #   action: rebuild
+    # - action: sync
+    #   path: ./client
+    #   target: /app
+    #   ignore:
+    #     - node_modules/
