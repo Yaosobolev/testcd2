@@ -32,6 +32,14 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
             set -e
-            cd ~/project
-            git pull origin
+            PROJECT_DIR="~/project"
+            mkdir -p $PROJECT_DIR
+            cd $PROJECT_DIR
+
+            if [ ! -d ".git" ]; then
+            git clone https://github.com/Yaosobolev/testcd2.git .
+            fi
+            
+            git pull origin main
+            
             docker compose watch
