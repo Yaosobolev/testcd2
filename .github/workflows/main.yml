@@ -42,4 +42,5 @@ jobs:
             
             git pull origin main
             
-            docker compose watch
+            # docker compose watch
+            docker compose up --build
