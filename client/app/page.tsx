@@ -93,7 +93,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to nextjs.org → aue
+          Go to nextjs.org → аня
         </a>
       </footer>
     </div>
