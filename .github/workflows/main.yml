@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.VPS_PASSWORD }}
           script: |
             set -e
-            PROJECT_DIR="~/project"
+            PROJECT_DIR="project"
             mkdir -p $PROJECT_DIR
             cd $PROJECT_DIR
 
