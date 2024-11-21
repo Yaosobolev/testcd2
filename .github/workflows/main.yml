@@ -45,3 +45,4 @@ jobs:
             # docker compose watch
             docker-compose down
             docker compose up --build -d
+            docker ps
